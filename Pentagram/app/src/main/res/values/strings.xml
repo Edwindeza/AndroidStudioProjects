@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pentagram</string>
+    <string name="textoTitulo">Hello Word!</string>
+    <string name="textoBoton">Click</string>
+    <string name="mensaje">Edwin Deza</string>
+    <string name="texto_accion">Acción</string>
+</resources>
