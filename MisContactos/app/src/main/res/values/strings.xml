@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MisContactos</string>
+    <string name="nombre">Edwin Deza</string>
+    <string name="telefono">987645213</string>
+    <string name="email">ejdeza@gmail.com</string>
+
+
+    <string name="pnombre">pnombre</string>
+    <string name="ptelefono">ptelefono</string>
+    <string name="pemail">pemail</string>
+</resources>

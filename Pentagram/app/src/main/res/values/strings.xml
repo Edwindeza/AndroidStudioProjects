@@ -4,4 +4,15 @@
     <string name="textoBoton">Click</string>
     <string name="mensaje">Edwin Deza</string>
     <string name="texto_accion">Acción</string>
+
+
+    <string-array name="planetas">
+        <item>Marte</item>
+        <item>Tierra</item>
+        <item>Venus</item>
+        <item>Mercurio</item>
+        <item>Jupiter</item>
+    </string-array>
+    <string name="titulo_tarjeta">Android 5.0</string>
+    <string name="descripcion_tarjeta">Esta es la versión en la que se incluyo Material Design, Android Lollipop </string>
 </resources>

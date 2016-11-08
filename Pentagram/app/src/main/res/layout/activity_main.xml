@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,13 +10,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.dise07.pentagram.MainActivity">
+    tools:context="com.example.dise07.pentagram.MainActivity"
+    android:background="@color/colorFondo">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sfiMiIndicadorRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lista_height">
+        <!--Esta etiqueta esta lista para recibir una etiqueta hijo-->
+
+        <ListView
+            android:id="@+id/lsMiLista"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lista_height">
+
+        </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
 
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textoTitulo" />
+        android:text="@string/textoTitulo"
+        android:layout_below="@+id/sfiMiIndicadorRefresh"/>
     <Button
         android:id="@+id/btnMiBoton"
         android:layout_width="match_parent"
@@ -30,4 +55,57 @@
         android:layout_below="@id/btnMiBoton"
         android:id="@+id/fabMiFab"
         />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/card_medida"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fabMiFab"
+        card_view:cardCornerRadius="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgImagen"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/lollipop"
+                android:scaleType="centerCrop"
+
+                />
+            <!-- centerCrop es como poner background-size : cover -->
+
+            <TextView
+                android:id="@+id/tvTituloTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_tarjeta"
+                android:layout_below="@id/imgImagen"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:textSize="@dimen/card_title_size"
+                />
+            <TextView
+                android:id="@+id/tvDescripcionTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descripcion_tarjeta"
+                android:layout_below="@id/tvTituloTarjeta"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
 </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+
