@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.artkodec.uv_control">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".UVControlApplication"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD2LD3MKHllFRh_JaGJ4w2CX3w3Gj8iIf0"/>
+
+        <activity android:name=".views.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+
+        <activity
+            android:name=".views.activities.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".views.activities.MyAccountActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".views.activities.MyPerfilActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".views.activities.RegisterUserActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".views.activities.InformationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".views.activities.AboutActivity"></activity>
+        <activity
+            android:name=".views.activities.FavoritesZonesActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

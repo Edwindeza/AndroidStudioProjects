@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estado Presionado -->
+    <item android:state_pressed="true">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="3dp" />
+                    <solid android:color="@color/color_flat_facebook_b" />
+                </shape>
+            </item>
+            <shape android:shape="rectangle">
+                <corners android:radius="3dp" />
+                <solid android:color="@color/color_flat_facebook_b" />
+            </shape>
+        </layer-list>
+    </item>
+
+    <!-- Estado Focuseado -->
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item>
+            <shape android:shape="rectangle">
+                <corners android:radius="3dp" />
+                <solid android:color="@color/color_flat_facebook_b" />
+            </shape>
+        </item>
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp" />
+            <solid android:color="@color/color_flat_facebook_b" />
+        </shape>
+    </layer-list>
+
+    <!-- Estado Normal -->
+    <item>
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="3dp" />
+                    <solid android:color="@color/color_flat_facebook_b" />
+                </shape>
+            </item>
+            <shape android:shape="rectangle">
+                <corners android:radius="3dp" />
+                <solid android:color="@color/color_flat_facebook_a" />
+            </shape>
+        </layer-list>
+    </item>
+
+</selector>

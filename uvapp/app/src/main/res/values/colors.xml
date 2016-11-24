@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#536aff</color>
+    <color name="primary_light">#02A8F3</color>
+    <color name="colorAccent">#3B5999</color>
+
+
+    <color name="windows_backgroung">#dedede</color>
+    <color name="color_flat_facebook_a">#3a5994</color>
+    <color name="color_flat_facebook_b">#1060b2</color>
+    <color name="color_flat_twitter_a">#2ac6f5</color>
+    <color name="color_flat_twitter_b">#07b3eb</color>
+
+    <color name="orange">#ff4609</color>
+    <color name="color_transparent">#00ffffff</color>
+    <color name="color_transparent_focus">#07ffffff</color>
+
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#484848</color>
+    <color name="textColorAlternative">#797979</color>
+
+    <color name="primary_text">#2d2727</color>
+    <color name="text_title">#3b3333</color>
+    <color name="secondary_text">#706f6f</color>
+    <color name="black">#000000</color>
+    <color name="red">#d90900</color>
+    <color name="yellow">#e4bf1d</color>
+    <color name="green">#227e00</color>
+    <color name="violet">#9d00b9</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="skin">#f4b4b4</color>
+    <color name="skin_medium">#af7c5f</color>
+    <color name="skin_black">#592f23</color>
+</resources>

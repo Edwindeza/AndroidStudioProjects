@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">UV-Control</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="my_perfil">Perfil</string>
+    <string name="change_password">Modificar Contraseña</string>
+    <string name="edit_password">Modificar Contraseña</string>
+
+    <string name="close_session">Cerrar sesión</string>
+    <string name="register_user">Registrar usuario</string>
+    <string name="create_account_tittle">Crear una cuenta</string>
+    <string name="register">Registrar</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
+</string>
+
+
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="suggestions">Sugerencias</string>
+    <string name="proposals">Propuestas</string>
+    <string name="floro">La temperatura se muestra agradable, sin índicios de precipitación, poco viento y humedad relativa</string>
+
+
+    <string name="login_user">Login de Usuario</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Login</string>
+    <string name="login_facebook">Login con Facebook</string>
+    <string name="recover_password">¿Olvidaste tu contraseña?</string>
+    <string name="create_account">Crear una cuenta</string>
+    <string name="load">Cargando...</string>
+
+    <string name="my_account">Mi Cuenta</string>
+    <string name="personal_information">Datos Personales</string>
+    <string name="first_name">Nombres</string>
+    <string name="last_name">Apellidos</string>
+    <string name="login_like">Sesión iniciada como</string>
+    <string name="api_google">AIzaSyBZZv0ANL2uYWsyheqhA_Wdcm2QldHnYq0</string>
+
+    <string name="facebook_app_id">1052097458216000</string>
+</resources>
