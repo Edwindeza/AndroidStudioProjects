@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:background="@color/white"
+        android:id="@+id/frame_container"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="165dp">
+                <ImageView
+                    android:id="@+id/front_cover"
+                    android:fitsSystemWindows="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:drawingCacheQuality="low"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:id="@+id/background_perfil"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/profile_image"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/ic_account_circle"
+                            android:layout_gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+                        <TextView
+                            android:padding="20dp"
+                            android:id="@+id/tv_name_user"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:textSize="@dimen/title_text"
+                            android:text="@string/personal_information"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <com.artkodec.uv_control.utils.LayoutRipple
+                android:id="@+id/item_perfil_access"
+                android:padding="10dp"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ic_action_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_perfil"
+                    android:textColor="@color/primary_text"
+                    android:padding="@dimen/paddin_text_view"
+                    android:textSize="@dimen/primary_text"
+                    android:layout_weight="1"
+                    android:text="@string/my_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_chevron_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </com.artkodec.uv_control.utils.LayoutRipple>
+            <com.artkodec.uv_control.utils.LayoutRipple
+                android:id="@+id/item_change_password"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="10dp"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ic_action_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_change_password"
+                    android:textColor="@color/primary_text"
+                    android:padding="@dimen/paddin_text_view"
+                    android:textSize="@dimen/primary_text"
+                    android:layout_weight="1"
+                    android:text="@string/change_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_chevron_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </com.artkodec.uv_control.utils.LayoutRipple>
+
+            <com.artkodec.uv_control.utils.LayoutRipple
+                android:clickable="true"
+                android:id="@+id/item_close_session"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_action_exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_close_session"
+                        android:textColor="@color/primary_text"
+                        android:padding="@dimen/paddin_text_view"
+                        android:textSize="@dimen/primary_text"
+                        android:layout_weight="1"
+                        android:text="@string/close_session"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+            </com.artkodec.uv_control.utils.LayoutRipple>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

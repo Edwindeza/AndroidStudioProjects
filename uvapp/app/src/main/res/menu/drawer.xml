@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+
+        <item
+            android:id="@+id/menu_1"
+            android:icon="@drawable/ic_action_bulb"
+            android:title="Consejos UV-Control" />
+
+        <item
+            android:id="@+id/menu_2"
+            android:icon="@drawable/ic_action_star_10"
+            android:title="Zonas Favoritas" />
+        <item
+            android:id="@+id/menu_3"
+            android:icon="@drawable/ic_action_rocket"
+            android:title="Acerca de UV-Control" />
+
+        <item
+            android:id="@+id/menu_4"
+            android:icon="@drawable/ic_account_circle"
+            android:title="Mi Cuenta" />
+    </group>
+
+
+
+</menu>

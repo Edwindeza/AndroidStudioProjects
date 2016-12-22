@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:hint="Nuevo"
+            android:textSize="@dimen/primary_text"
+            android:inputType="textPersonName|textCapWords"
+            android:id="@+id/et_email"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/Btn"
+        android:text="Guardar Zona"
+        android:textColor="@color/white"
+        android:textSize="@dimen/primary_text"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>

@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         contactos = new ArrayList<Contacto>();
         contactos.add(new Contacto("Edwin Deza", "987645213", "ejdeza@gmail.com"));
         contactos.add(new Contacto("Darwin Deza", "234453366", "dezacul@gmail.com"));
-        contactos.add(new Contacto("Katherinne Deza", "684963215", "asfasf@gmail.com"));
-        contactos.add(new Contacto("Junior Deza", "975409685", "evxffhjdeza@gmail.com"));
-        contactos.add(new Contacto("Juvenal Deza", "990117206", "asfasfgx@gmail.com"));
+        contactos.add(new Contacto("Katherinne Deza", "684963215", "katdc_70@gmail.com"));
+        contactos.add(new Contacto("Junior Deza", "975409685", "ejdeza@hotmil.com"));
+        contactos.add(new Contacto("Juvenal Deza", "990117206", "serdeza@gmail.com"));
 
         ArrayList<String> nombresContacto= new ArrayList<>();
 

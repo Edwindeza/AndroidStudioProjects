@@ -1,0 +1,17 @@
+build/
+*.iml
+gradle/
+gradlew
+gradlew.bat
+local.properties
+.idea/
+.gradle
+build
+/local.properties
+.DS_Store
+bin/
+gen/
+*.class
+*.dex
+*.apk
+*.log

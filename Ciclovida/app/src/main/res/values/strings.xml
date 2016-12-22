@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Ciclovida</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Hola Mundo!</string>
     <string name="action_settings">Settings</string>
+    <string name="onCreate">OnCreate</string>
+    <string name="onStart">OnStart</string>
+    <string name="onResume">OnResume</string>
+    <string name="onPause">OnPause</string>
+    <string name="onStop">OnStop</string>
+    <string name="onDestroy">OnDestroy</string>
 </resources>
