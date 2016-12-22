@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(getResources().getString(R.string.ptelefono),contactos.get(position).getTlefono());
                 intent.putExtra(getResources().getString(R.string.pemail),contactos.get(position).getEmail());
                 startActivity(intent);
+                finish();
                 //Intent explicito que permite unir componentes de una pantalla a otra.
             }
         });
