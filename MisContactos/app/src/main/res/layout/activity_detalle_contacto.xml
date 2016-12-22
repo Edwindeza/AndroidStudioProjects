@@ -26,6 +26,7 @@
         android:orientation="horizontal"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
+        android:onClick="llamar"
         >
         
         <ImageView
@@ -41,13 +42,15 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimaryText"
             android:paddingLeft="10dp"
-            android:text="@string/telefono"/>
+            android:text="@string/telefono"
+            />
     </android.support.v7.widget.LinearLayoutCompat>
 
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:onClick="enviarMail"
         >
 
         <ImageView
