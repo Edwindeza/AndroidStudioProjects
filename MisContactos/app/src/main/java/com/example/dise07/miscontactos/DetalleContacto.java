@@ -3,12 +3,14 @@ package com.example.dise07.miscontactos;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.media.Image;
 import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DetalleContacto extends AppCompatActivity {
@@ -16,6 +18,7 @@ public class DetalleContacto extends AppCompatActivity {
     private TextView tvNombre;
     private TextView tvTelefono;
     private TextView tvEmail;
+    private int tvImagen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +27,9 @@ public class DetalleContacto extends AppCompatActivity {
 
         Bundle parametros = getIntent().getExtras();
 
-        String nombre = parametros.getString(getResources().getString(R.string.pnombre));
-        String telefono = parametros.getString(getResources().getString(R.string.ptelefono));
-        String email = parametros.getString(getResources().getString(R.string.pemail));
+        String nombre = parametros.getString("nombre");
+        String telefono = parametros.getString("telefono");
+        String email = parametros.getString("email");
 
         tvNombre = (TextView) findViewById(R.id.tvNombre);
         tvTelefono = (TextView) findViewById(R.id.tvTel);

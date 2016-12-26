@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void inicializarLizeAdaptador(){
-        ContactoAdaptador adaptador=new ContactoAdaptador(contactos);
+        ContactoAdaptador adaptador=new ContactoAdaptador(contactos, this);
         listacontactos.setAdapter(adaptador);
     }
 
