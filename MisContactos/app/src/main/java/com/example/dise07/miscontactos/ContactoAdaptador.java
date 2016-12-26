@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -64,6 +65,12 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
                 activity.finish();
             }
         });
+        contactoViewHolder.btnLike.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(activity, "Diste like a "+ contacto.getNombre(),Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -76,12 +83,14 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
         private ImageView imgFoto;
         private TextView tvNombreCV;
         private TextView tvTelefonoCV;
+        private ImageButton btnLike;
 
         public ContactoViewHolder(View itemView) {
             super(itemView);
             imgFoto         =(ImageView) itemView.findViewById(R.id.imgfotocv);
             tvNombreCV      = (TextView) itemView.findViewById(R.id.tvNombreCV);
             tvTelefonoCV    = (TextView) itemView.findViewById(R.id.tvTelefonoCV);
+            btnLike         = (ImageButton) itemView.findViewById(R.id.bnLike);
         }
     }
 
