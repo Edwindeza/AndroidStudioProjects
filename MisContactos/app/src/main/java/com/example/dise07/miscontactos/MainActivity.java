@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
 import com.example.dise07.miscontactos.adapter.PageAdapter;
-import com.example.dise07.miscontactos.fragment.PerfilFragment;
-import com.example.dise07.miscontactos.fragment.RecicleViewFragment;
+import com.example.dise07.miscontactos.vista_fragment.PerfilFragment;
+import com.example.dise07.miscontactos.vista_fragment.RecicleViewFragment;
 
 import java.util.ArrayList;
 

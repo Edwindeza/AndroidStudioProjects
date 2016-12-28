@@ -1,4 +1,4 @@
-package com.example.dise07.miscontactos.fragment;
+package com.example.dise07.miscontactos.vista_fragment;
 
 
 import android.os.Bundle;

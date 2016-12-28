@@ -1,4 +1,4 @@
-package com.example.dise07.miscontactos.fragment;
+package com.example.dise07.miscontactos.vista_fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import com.example.dise07.miscontactos.R;
 import com.example.dise07.miscontactos.adapter.ContactoAdaptador;
 import com.example.dise07.miscontactos.pojo.Contacto;
+import com.example.dise07.miscontactos.presentador.IRecyclerViewFragmentPresenter;
+import com.example.dise07.miscontactos.presentador.RecyclerViewFragmentPresenter;
 
 import java.util.ArrayList;
 
@@ -19,42 +21,42 @@ import java.util.ArrayList;
  * Created by Dise07 on 26/12/2016.
  */
 
-public class RecicleViewFragment extends Fragment {
+public class RecicleViewFragment extends Fragment implements IRecicleViewFragmentView{
 
     ArrayList<Contacto> contactos;
     private RecyclerView listacontactos;
+    private IRecyclerViewFragmentPresenter presenter;
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_recicleview, container, false);
 
         listacontactos = (RecyclerView) v.findViewById(R.id.rvContactos);
+        presenter = new RecyclerViewFragmentPresenter(this, getContext());
+        return v;
+        //return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+    @Override
+    public void generarLinearLayoutVertical() {
 
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
 
         listacontactos.setLayoutManager(llm);
-        inicializarListaContactos();
-        inicializarLizeAdaptador();
-
-
-        return v;
-        //return super.onCreateView(inflater, container, savedInstanceState);
     }
 
+    @Override
+    public ContactoAdaptador crearAdaptador(ArrayList<Contacto> contactos) {
+        ContactoAdaptador adaptador = new ContactoAdaptador(contactos, getActivity());
+        return adaptador;
+    }
 
-    public void inicializarLizeAdaptador(){
-        ContactoAdaptador adaptador=new ContactoAdaptador(contactos, getActivity());
+    @Override
+    public void iniciaLizarAdaptador(ContactoAdaptador adaptador){
         listacontactos.setAdapter(adaptador);
     }
 
-    public void inicializarListaContactos(){
-        contactos = new ArrayList<Contacto>();
-        contactos.add(new Contacto("Edwin Deza", "987645213", "ejdeza@gmail.com",R.drawable.perfil));
-        contactos.add(new Contacto("Darwin Deza", "234453366", "dezacul@gmail.com",R.drawable.perfil));
-        contactos.add(new Contacto("Katherinne  Deza", "684963215", "katdc_70@gmail.com",R.drawable.perfil));
-        contactos.add(new Contacto("Junior Deza", "975409685", "ejdeza@hotmil.com",R.drawable.perfil));
-        contactos.add(new Contacto("Juvenal Deza", "990117206", "serdeza@gmail.com",R.drawable.perfil));
-
-    }
 }

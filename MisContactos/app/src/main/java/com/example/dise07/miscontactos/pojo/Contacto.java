@@ -6,18 +6,37 @@ package com.example.dise07.miscontactos.pojo;
 
 public class Contacto {
 
+    private int id;
     private String nombre;
     private String tlefono;
     private String email;
     private int foto;
 
+    public Contacto(String nombre, String tlefono, String email, int foto, int likes) {
+        this.nombre = nombre;
+        this.tlefono = tlefono;
+        this.email = email;
+        this.foto = foto;
+        this.likes = likes;
+    }
 
-    public Contacto(String nombre, String tlefono, String email, int foto) {
-        this.nombre     = nombre;
-        this.tlefono    = tlefono;
-        this.email      = email;
-        this.foto       = foto;
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private int likes;
+
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
     }
 
     public int getFoto() {

@@ -21,8 +21,9 @@
             android:id="@+id/imgfotocv"
             android:src="@drawable/perfil"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <LinearLayout
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"/>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -33,11 +34,14 @@
                 android:id="@+id/bnLike"
                 android:layout_gravity="center"
                 android:background="@drawable/like"
+                android:layout_alignParentLeft="true"
                 />
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                >
                 <TextView
                     android:id="@+id/tvNombreCV"
                     android:layout_width="wrap_content"
@@ -58,8 +62,18 @@
                     />
 
             </LinearLayout>
+            <TextView
+                android:id="@+id/tvlikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plikes"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                />
 
-        </LinearLayout>
+
+        </RelativeLayout>
 
     </LinearLayout>
 
