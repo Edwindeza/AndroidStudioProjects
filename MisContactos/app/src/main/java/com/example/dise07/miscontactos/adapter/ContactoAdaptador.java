@@ -1,4 +1,4 @@
-package com.example.dise07.miscontactos;
+package com.example.dise07.miscontactos.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,7 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
+import com.example.dise07.miscontactos.pojo.Contacto;
+import com.example.dise07.miscontactos.DetalleContacto;
+import com.example.dise07.miscontactos.R;
+
 import java.util.ArrayList;
 
 /**

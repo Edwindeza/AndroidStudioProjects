@@ -1,4 +1,4 @@
-package com.example.dise07.miscontactos;
+package com.example.dise07.miscontactos.pojo;
 
 /**
  * Created by Dise07 on 08/11/2016.
