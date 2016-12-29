@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.dise07.miscontactos.db.ConstructorContactos;
 import com.example.dise07.miscontactos.pojo.Contacto;
 import com.example.dise07.miscontactos.DetalleContacto;
 import com.example.dise07.miscontactos.R;
@@ -48,13 +49,13 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
     //asocia cada elementode la lista con cada view
 
     @Override
-    public void onBindViewHolder(ContactoViewHolder contactoViewHolder, int position) {
+    public void onBindViewHolder(final ContactoViewHolder contactoViewHolder, int position) {
         //Aca pasamos la lista de contactos
        final Contacto contacto = contactos.get(position);
 
         contactoViewHolder.imgFoto.setImageResource(contacto.getFoto());
         contactoViewHolder.tvNombreCV.setText(contacto.getNombre());
-        contactoViewHolder.tvTelefonoCV.setText(contacto.getTlefono());
+        contactoViewHolder.tvTelefonoCV.setText(contacto.getTelefono());
         contactoViewHolder.tvlikes.setText(String.valueOf(contacto.getLikes())+" Likes");
 
         contactoViewHolder.imgFoto.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +64,7 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
                 Toast.makeText(activity, contacto.getNombre(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(activity, DetalleContacto.class);
                 intent.putExtra("nombre",contacto.getNombre());
-                intent.putExtra("telefono",contacto.getTlefono());
+                intent.putExtra("telefono",contacto.getTelefono());
                 intent.putExtra("email",contacto.getEmail());
                 activity.startActivity(intent);
                 activity.finish();
@@ -73,6 +74,12 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
             @Override
             public void onClick(View v) {
                 Toast.makeText(activity, "Diste like a "+ contacto.getNombre(),Toast.LENGTH_SHORT).show();
+
+                ConstructorContactos constructorContactos= new ConstructorContactos(activity);
+                constructorContactos.darLikeContacto(contacto);
+
+                contactoViewHolder.tvlikes.setText(Integer.toString(constructorContactos.obtenerLikesContacto(contacto)));
+
             }
         });
     }

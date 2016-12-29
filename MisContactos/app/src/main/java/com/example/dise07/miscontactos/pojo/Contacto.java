@@ -8,18 +8,22 @@ public class Contacto {
 
     private int id;
     private String nombre;
-    private String tlefono;
+    private String telefono;
     private String email;
     private int foto;
+    private int likes;
 
-    public Contacto(String nombre, String tlefono, String email, int foto, int likes) {
+    public Contacto(String nombre, String telefono, String email, int foto, int likes) {
         this.nombre = nombre;
-        this.tlefono = tlefono;
+        this.telefono = telefono;
         this.email = email;
         this.foto = foto;
         this.likes = likes;
     }
 
+    public Contacto(){
+
+    }
     public int getId() {
         return id;
     }
@@ -28,7 +32,6 @@ public class Contacto {
         this.id = id;
     }
 
-    private int likes;
 
 
     public int getLikes() {
@@ -47,12 +50,12 @@ public class Contacto {
         this.foto = foto;
     }
 
-    public String getTlefono() {
-        return tlefono;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setTlefono(String tlefono) {
-        this.tlefono = tlefono;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public String getEmail() {
