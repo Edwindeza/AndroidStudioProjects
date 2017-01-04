@@ -10,6 +10,7 @@ import java.util.ArrayList;
  */
 
 public interface IRecicleViewFragmentView {
+
     public void generarLinearLayoutVertical();
 
     public ContactoAdaptador crearAdaptador(ArrayList<Contacto> contactos);

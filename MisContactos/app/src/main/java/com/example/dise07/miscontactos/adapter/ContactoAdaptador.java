@@ -85,7 +85,8 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
     }
 
     @Override
-    public int getItemCount() { //Cantidad de elementos que contiene la cardviewe
+    public int getItemCount() {
+        //Cantidad de elementos que contiene la cardview
         return contactos.size();
     }
 
@@ -96,15 +97,14 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
         private TextView tvTelefonoCV;
         private ImageButton btnLike;
         private TextView tvlikes;
-
         public ContactoViewHolder(View itemView) {
             super(itemView);
 
-            imgFoto         =(ImageView) itemView.findViewById(R.id.imgfotocv);
+            imgFoto         = (ImageView) itemView.findViewById(R.id.imgfotocv);
             tvNombreCV      = (TextView) itemView.findViewById(R.id.tvNombreCV);
             tvTelefonoCV    = (TextView) itemView.findViewById(R.id.tvTelefonoCV);
             btnLike         = (ImageButton) itemView.findViewById(R.id.bnLike);
-            tvlikes         =(TextView) itemView.findViewById(R.id.tvlikes);
+            tvlikes         = (TextView) itemView.findViewById(R.id.tvlikes);
         }
     }
 

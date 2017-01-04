@@ -2,7 +2,6 @@ package com.example.dise07.miscontactos.presentador;
 
 import android.content.Context;
 
-import com.example.dise07.miscontactos.adapter.ContactoAdaptador;
 import com.example.dise07.miscontactos.db.ConstructorContactos;
 import com.example.dise07.miscontactos.pojo.Contacto;
 import com.example.dise07.miscontactos.vista_fragment.IRecicleViewFragmentView;
@@ -25,8 +24,6 @@ public class RecyclerViewFragmentPresenter implements IRecyclerViewFragmentPrese
         this.iRecicleViewFragmentView= iRecicleViewFragmentView;
 
         this.context=context;
-
-        obtenerContactosBaseDatos();
     }
 
 

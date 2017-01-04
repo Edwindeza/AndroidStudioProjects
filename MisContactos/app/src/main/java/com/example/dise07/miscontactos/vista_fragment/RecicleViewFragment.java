@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class RecicleViewFragment extends Fragment implements IRecicleViewFragmentView{
 
-    ArrayList<Contacto> contactos;
+
     private RecyclerView listacontactos;
     private IRecyclerViewFragmentPresenter presenter;
 
@@ -41,7 +41,6 @@ public class RecicleViewFragment extends Fragment implements IRecicleViewFragmen
 
     @Override
     public void generarLinearLayoutVertical() {
-
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
         llm.setOrientation(LinearLayoutManager.VERTICAL);
 
